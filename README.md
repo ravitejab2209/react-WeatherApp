@@ -1,12 +1,14 @@
-<<<<<<< HEAD
-# React + Vite
+React Weather App
+The React Weather App is a simple weather application built using React. It allows users to search for weather information based on location and displays relevant details. Here’s how the app is structured:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# react-WeatherApp
->>>>>>> aa53ab35656fcf40523d9dce2b23f8c79a1376f3
+Components
+Search Box Component:
+The Search Box provides an input field where users can enter a city name or location.
+It connects to the OpenWeatherMap API to fetch weather data based on the user’s input.
+Info Box Component:
+The Info Box receives the weather data fetched from the API.
+It displays relevant information such as temperature, humidity, wind speed, and weather conditions.
+WeatherApp Component:
+The WeatherApp component ties everything together.
+It manages the state, handles API requests, and renders the Search Box and Info Box components.
+When the user enters a location, the WeatherApp component fetches weather data and passes it to the Info Box for display.
